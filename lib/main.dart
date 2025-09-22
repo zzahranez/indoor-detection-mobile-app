@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:indoor_detection/screens/home/home.dart';
+import 'package:indoor_detection/screens/navigation/bottom_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,10 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'YOLO App',
+      title: 'Smart Indoor',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const HomeScreen(), // layar utama
+      home: const BottomBar(),
     );
   }
 }
